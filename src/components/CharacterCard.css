@@ -1,0 +1,10 @@
+
+.character-card {
+ margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.character-card__title {
+    font-size: 24px;
+}

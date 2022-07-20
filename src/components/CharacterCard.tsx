@@ -1,4 +1,5 @@
 import {Character} from "../Character";
+import "./CharacterCard.css"
 
 type CharacterCardProps = {
     char: Character
@@ -7,8 +8,8 @@ type CharacterCardProps = {
 
 export default function CharacterCard(props: CharacterCardProps) {
     return (
-        <div>
-            <p>{props.char.name}</p>
+        <div className={"character-card"}>
+            <p className={"character-card__title"}>{props.char.name}</p>
             <img src={props.char.image}
                  alt={props.char.name}/>
             <p>
