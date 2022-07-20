@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import CharacterGallery from "./CharacterGallery";
+import CharacterGallery from "./components/CharacterGallery";
+import Header from "./components/Header";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+        <Header />
       <CharacterGallery chars={charactersResponse.results}/>
     </div>
   );
