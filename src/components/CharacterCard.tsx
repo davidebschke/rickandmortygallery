@@ -2,24 +2,24 @@ import {Character} from "../Character";
 import "./CharacterCard.css"
 
 type CharacterCardProps = {
-    char: Character
+    character: Character
 }
 
 
 export default function CharacterCard(props: CharacterCardProps) {
     return (
         <div className={"character-card"}>
-            <p className={"character-card__title"}>{props.char.name}</p>
-            <img src={props.char.image}
-                 alt={props.char.name}/>
+            <p className={"character-card__title"}>{props.character.name}</p>
+            <img src={props.character.image}
+                 alt={props.character.name}/>
             <p>
                 Status:
-                {props.char.status}
+                {props.character.status}
 
             </p>
             <p>
                 Origin
-                {props.char.origin.name}
+                {props.character.origin.name}
             </p>
 
         </div>

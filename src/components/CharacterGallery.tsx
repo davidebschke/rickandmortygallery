@@ -3,7 +3,7 @@ import CharacterCard from "./CharacterCard";
 import './CharacterGallery.css'
 
 type CharacterGalleryProps = {
-    chars: Character[]
+    characters: Character[]
 }
 
 export default function CharacterGallery(props: CharacterGalleryProps) {
@@ -11,8 +11,8 @@ export default function CharacterGallery(props: CharacterGalleryProps) {
     return (
         <div className={"character-gallery"}>
             {
-                props.chars.map((char) => <CharacterCard char={char}
-                                                                   key={char.id}/>)
+                props.characters.map((character) => <CharacterCard character={character}
+                                                                   key={character.id}/>)
             }
         </div>
     )

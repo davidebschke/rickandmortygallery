@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
         <Header />
-      <CharacterGallery chars={charactersResponse.results}/>
+      <CharacterGallery characters={charactersResponse.results}/>
     </div>
   );
 }
