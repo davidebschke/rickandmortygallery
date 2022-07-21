@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import CharacterGallery from "./components/CharacterGallery";
 import Header from "./components/Header";
+import ActionBar from "./components/ActionBar";
 
 function App() {
 
@@ -274,7 +275,7 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <input type="text" onChange={event => setSearchText(event.target.value)}/>
+            <ActionBar setSearchText={setSearchText}/>
             <CharacterGallery characters={filteredCharacters}/>
         </div>
     );
